@@ -1,0 +1,23 @@
+page-home {
+   
+    ion-segment-button {
+        // min-height: 70px;
+        line-height: 1.5rem !important; 
+    
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 1.6rem;
+
+    }
+    .item-md{
+        font-size: 1.4rem;
+    }
+    .segment-md .segment-button {
+        font-size:1.6rem;
+    }
+    .select-text{
+        min-width: 60px;
+        
+    }
+   
+}

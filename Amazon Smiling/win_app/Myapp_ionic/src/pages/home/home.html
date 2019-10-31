@@ -1,0 +1,163 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      AmazonSmilling
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <ion-thumbnail item-start style="width:100px">
+      <img src="../assets/imgs/1024.png">
+    </ion-thumbnail>
+    <ion-segment [(ngModel)]="tab" style="font-size:1.7rem">
+      <ion-segment-button value="home" aria-pressed="true">
+        <div text-wrap>{{Tab1}}</div>
+      </ion-segment-button>
+      <ion-segment-button value="charity" aria-pressed="false">
+        <div text-wrap>{{Tab2}}</div>
+      </ion-segment-button>
+      <ion-segment-button value="configuration" aria-pressed="false">
+        <div text-wrap>{{Tab3}}</div>
+      </ion-segment-button>
+      <ion-segment-button value="about" aria-pressed="false">
+        <div text-wrap>{{Tab4}}</div>
+      </ion-segment-button>
+    </ion-segment>
+    <ion-list>
+      <ion-item>Language</ion-item>
+      <ion-select [(ngModel)]="language" [selectOptions]="Language" (ionChange)="selectLanguage()">
+        <ion-option value="English">English</ion-option>
+        <ion-option value="Española">Española</ion-option>
+      </ion-select>
+    </ion-list>
+  </ion-row>
+
+  <div [ngSwitch]="tab">
+    <ion-list *ngSwitchCase="'home'">
+      <ion-item>
+        <h2>{{HeadingText1}}</h2>
+      </ion-item>
+      <div [innerHTML]='HtmlText1'></div>
+      <ion-row>
+        <div padding>
+          <button ion-button color="primary" primary (click)="continue_1()">{{Button1}}</button>
+        </div>
+        <!-- <div padding>
+          <button ion-button color="primary" primary (click)="continue_2()">Continuar en español</button>
+        </div> -->
+
+      </ion-row>
+    </ion-list>
+    <ion-list *ngSwitchCase="'charity'">
+      <ion-item>
+        <h2>{{HeadingText2}}</h2>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-input list="Charity_Name" [(ngModel)]="Charity_Name" name="browser" placeholder="{{Label2}}" (ionChange)="showCharity()">
+            <ion-label>{{Label1}}</ion-label>
+          </ion-input>
+          <datalist id="Charity_Name">
+            <option class="text-input Charity-field" *ngFor="let Charity of Charitys" value="{{Charity.charityName}}"></option>
+          </datalist>
+          <ion-list>
+            <a ion-item (click)="openModal(Charity_Name)">
+              <ion-label fixed>{{charity_about}}</ion-label>
+              <!-- <ion-input type="text" [(ngModel)]="AboutCharity"></ion-input>> -->
+            </a>
+          </ion-list>
+          <ion-item [hidden]="shouldHide">
+            <ion-label> {{Label3}} : {{City}}</ion-label>
+            <ion-label> {{Label4}} : {{State}}</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-thumbnail item-start style="width:96px">
+            <img src="../assets/imgs/1024.png" style="width: 200%">
+          </ion-thumbnail>
+        </ion-col>
+
+      </ion-row>
+      <div [innerHTML]='HtmlText2'></div>
+      <ion-row>
+        <!-- <div padding>
+          <button ion-button color="primary" primary (click)="request_new_charity()">{{Button2}}</button>
+        </div> -->
+        <div padding>
+          <button ion-button color="primary" primary (click)="continue_3()">{{Button1}}</button>
+        </div>
+      </ion-row>
+    </ion-list>
+    <ion-list *ngSwitchCase="'configuration'">
+      <ion-slides pager>
+        <ion-slide>
+          <h2 class="slide-title" [innerHTML]="HeadingText3_1"></h2>
+          <p [innerHTML]="HtmlText3_1"></p>
+          <ion-list radio-group [(ngModel)]="browser">
+            <ion-item>
+              <ion-label>Google Chrome</ion-label>
+              <ion-radio value="Chrome"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Safari</ion-label>
+              <ion-radio value="Safari"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Fire Fox</ion-label>
+              <ion-radio value="FireFox"></ion-radio>
+            </ion-item>
+          </ion-list>
+        </ion-slide>
+        <ion-slide>
+          <h2 class="slide-title" [innerHTML]="HeadingText3_2"></h2>
+          <p [innerHTML]="HtmlText3_2"></p>
+        </ion-slide>
+        <ion-slide>
+          <h2 class="slide-title" [innerHTML]="HeadingText3_3"></h2>
+          <p [innerHTML]="HtmlText3_3"></p>
+        </ion-slide>
+        <ion-slide>
+          <h2 class="slide-title" [innerHTML]="HeadingText3_4"></h2>
+          <p [innerHTML]="HtmlText3_4"></p>
+        </ion-slide>
+        <ion-slide>
+          <h2 class="slide-title" [innerHTML]="HeadingText3_5"></h2>
+          <p [innerHTML]="HtmlText3_5"></p>
+          <ion-list>
+            <ion-item>
+              <ion-label floating>{{Label5}}</ion-label>
+              <ion-input type="text" [(ngModel)]="UserNameFirst"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label floating>{{Label6}}</ion-label>
+              <ion-input type="text" [(ngModel)]="UserNameLast"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label floating>{{Label7}}</ion-label>
+              <ion-input type="text" [(ngModel)]="UserEmail"></ion-input>
+            </ion-item>
+            <ion-item>
+              <button ion-button color="primary" primary (click)="continue_4()">{{Button1}}</button>
+            </ion-item>
+          </ion-list>
+        </ion-slide>
+      </ion-slides>
+
+    </ion-list>
+
+
+    <ion-list *ngSwitchCase="'about'">
+      <h2 class="slide-title" [innerHTML]="HeadingText4_1"></h2>
+      <p [innerHTML]="HtmlText4_1"></p>
+      <h2 class="slide-title" [innerHTML]="HeadingText4_2"></h2>
+      <p [innerHTML]="HtmlText4_2">{{Charity_Name}}</p>
+      <div padding>
+        <button ion-button color="primary" primary (click)="Finish()" id ="btn_finish">{{Button4}}</button>
+      </div>
+    </ion-list>
+
+  </div>
+
+</ion-content>

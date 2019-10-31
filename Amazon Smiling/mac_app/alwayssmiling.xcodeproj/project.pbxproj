@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F7A783421CA9F2F00CDB3F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7A783321CA9F2F00CDB3F7 /* AppDelegate.m */; };
+		1F7A783721CA9F2F00CDB3F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7A783621CA9F2F00CDB3F7 /* ViewController.m */; };
+		1F7A783921CA9F3000CDB3F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7A783821CA9F3000CDB3F7 /* Assets.xcassets */; };
+		1F7A783C21CA9F3000CDB3F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7A783A21CA9F3000CDB3F7 /* Main.storyboard */; };
+		1F7A783F21CA9F3000CDB3F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7A783E21CA9F3000CDB3F7 /* main.m */; };
+		1F7A784A21CA9F3000CDB3F7 /* AlwaysSmiling_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7A784921CA9F3000CDB3F7 /* AlwaysSmiling_Tests.m */; };
+		1F7A785521CA9F3000CDB3F7 /* AlwaysSmiling_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7A785421CA9F3000CDB3F7 /* AlwaysSmiling_UITests.m */; };
+		1F7A786921CA9F6400CDB3F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7A786821CA9F6400CDB3F7 /* Cocoa.framework */; };
+		1F7A786D21CA9F6400CDB3F7 /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7A786C21CA9F6400CDB3F7 /* SafariExtensionHandler.m */; };
+		1F7A787021CA9F6400CDB3F7 /* SafariExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7A786F21CA9F6400CDB3F7 /* SafariExtensionViewController.m */; };
+		1F7A787321CA9F6400CDB3F7 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7A787121CA9F6400CDB3F7 /* SafariExtensionViewController.xib */; };
+		1F7A787621CA9F6400CDB3F7 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 1F7A787521CA9F6400CDB3F7 /* script.js */; };
+		1F7A787821CA9F6400CDB3F7 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1F7A787721CA9F6400CDB3F7 /* ToolbarItemIcon.pdf */; };
+		1F7A787C21CA9F6400CDB3F7 /* extension_test1.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F7A786621CA9F6400CDB3F7 /* extension_test1.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		451F824621D0913C00397C72 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7A786821CA9F6400CDB3F7 /* Cocoa.framework */; };
+		451F824921D0913C00397C72 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F824821D0913C00397C72 /* SafariExtensionHandler.swift */; };
+		451F824B21D0913C00397C72 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F824A21D0913C00397C72 /* SafariExtensionViewController.swift */; };
+		451F824E21D0913C00397C72 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451F824C21D0913C00397C72 /* SafariExtensionViewController.xib */; };
+		451F825121D0913C00397C72 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 451F825021D0913C00397C72 /* script.js */; };
+		451F825321D0913C00397C72 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 451F825221D0913C00397C72 /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F7A784621CA9F3000CDB3F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F7A782721CA9F2F00CDB3F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F7A782E21CA9F2F00CDB3F7;
+			remoteInfo = "Extension Test";
+		};
+		1F7A785121CA9F3000CDB3F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F7A782721CA9F2F00CDB3F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F7A782E21CA9F2F00CDB3F7;
+			remoteInfo = "Extension Test";
+		};
+		1F7A787A21CA9F6400CDB3F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F7A782721CA9F2F00CDB3F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F7A786521CA9F6400CDB3F7;
+			remoteInfo = extension_test1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F7A788021CA9F6400CDB3F7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F7A787C21CA9F6400CDB3F7 /* extension_test1.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F7A782F21CA9F2F00CDB3F7 /* Extension Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Extension Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7A783221CA9F2F00CDB3F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F7A783321CA9F2F00CDB3F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F7A783521CA9F2F00CDB3F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F7A783621CA9F2F00CDB3F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F7A783821CA9F3000CDB3F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F7A783B21CA9F3000CDB3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F7A783D21CA9F3000CDB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F7A783E21CA9F3000CDB3F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F7A784021CA9F3000CDB3F7 /* AlwaysSmiling.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlwaysSmiling.entitlements; sourceTree = "<group>"; };
+		1F7A784521CA9F3000CDB3F7 /* Extension TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Extension TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7A784921CA9F3000CDB3F7 /* AlwaysSmiling_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlwaysSmiling_Tests.m; sourceTree = "<group>"; };
+		1F7A784B21CA9F3000CDB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F7A785021CA9F3000CDB3F7 /* Extension TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Extension TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7A785421CA9F3000CDB3F7 /* AlwaysSmiling_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlwaysSmiling_UITests.m; sourceTree = "<group>"; };
+		1F7A785621CA9F3000CDB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F7A786621CA9F6400CDB3F7 /* extension_test1.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = extension_test1.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7A786821CA9F6400CDB3F7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1F7A786B21CA9F6400CDB3F7 /* SafariExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionHandler.h; sourceTree = "<group>"; };
+		1F7A786C21CA9F6400CDB3F7 /* SafariExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionHandler.m; sourceTree = "<group>"; };
+		1F7A786E21CA9F6400CDB3F7 /* SafariExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionViewController.h; sourceTree = "<group>"; };
+		1F7A786F21CA9F6400CDB3F7 /* SafariExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionViewController.m; sourceTree = "<group>"; };
+		1F7A787221CA9F6400CDB3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		1F7A787421CA9F6400CDB3F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F7A787521CA9F6400CDB3F7 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		1F7A787721CA9F6400CDB3F7 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		1F7A787921CA9F6400CDB3F7 /* AlwaysSmiling1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlwaysSmiling1.entitlements; sourceTree = "<group>"; };
+		451F824521D0913B00397C72 /* AlwaysSmiling.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlwaysSmiling.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		451F824821D0913C00397C72 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		451F824A21D0913C00397C72 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		451F824D21D0913C00397C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		451F824F21D0913C00397C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451F825021D0913C00397C72 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		451F825221D0913C00397C72 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		451F825421D0913C00397C72 /* AlwaysSmiling.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlwaysSmiling.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F7A782C21CA9F2F00CDB3F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7A784221CA9F3000CDB3F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7A784D21CA9F3000CDB3F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7A786321CA9F6400CDB3F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7A786921CA9F6400CDB3F7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451F824221D0913B00397C72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451F824621D0913C00397C72 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F7A782621CA9F2F00CDB3F7 = {
+			isa = PBXGroup;
+			children = (
+				1F7A783121CA9F2F00CDB3F7 /* AlwaysSmiling */,
+				1F7A784821CA9F3000CDB3F7 /* AlwaysSmiling_Tests */,
+				1F7A785321CA9F3000CDB3F7 /* AlwaysSmiling_TestUITests */,
+				1F7A786A21CA9F6400CDB3F7 /* AlwaysSmiling1 */,
+				451F824721D0913C00397C72 /* AlwaysSmiling */,
+				1F7A786721CA9F6400CDB3F7 /* Frameworks */,
+				1F7A783021CA9F2F00CDB3F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F7A783021CA9F2F00CDB3F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F7A782F21CA9F2F00CDB3F7 /* Extension Test.app */,
+				1F7A784521CA9F3000CDB3F7 /* Extension TestTests.xctest */,
+				1F7A785021CA9F3000CDB3F7 /* Extension TestUITests.xctest */,
+				1F7A786621CA9F6400CDB3F7 /* extension_test1.appex */,
+				451F824521D0913B00397C72 /* AlwaysSmiling.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F7A783121CA9F2F00CDB3F7 /* AlwaysSmiling */ = {
+			isa = PBXGroup;
+			children = (
+				1F7A783221CA9F2F00CDB3F7 /* AppDelegate.h */,
+				1F7A783321CA9F2F00CDB3F7 /* AppDelegate.m */,
+				1F7A783521CA9F2F00CDB3F7 /* ViewController.h */,
+				1F7A783621CA9F2F00CDB3F7 /* ViewController.m */,
+				1F7A783821CA9F3000CDB3F7 /* Assets.xcassets */,
+				1F7A783A21CA9F3000CDB3F7 /* Main.storyboard */,
+				1F7A783D21CA9F3000CDB3F7 /* Info.plist */,
+				1F7A783E21CA9F3000CDB3F7 /* main.m */,
+				1F7A784021CA9F3000CDB3F7 /* AlwaysSmiling.entitlements */,
+			);
+			path = AlwaysSmiling;
+			sourceTree = "<group>";
+		};
+		1F7A784821CA9F3000CDB3F7 /* AlwaysSmiling_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1F7A784921CA9F3000CDB3F7 /* AlwaysSmiling_Tests.m */,
+				1F7A784B21CA9F3000CDB3F7 /* Info.plist */,
+			);
+			path = AlwaysSmiling_Tests;
+			sourceTree = "<group>";
+		};
+		1F7A785321CA9F3000CDB3F7 /* AlwaysSmiling_TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F7A785421CA9F3000CDB3F7 /* AlwaysSmiling_UITests.m */,
+				1F7A785621CA9F3000CDB3F7 /* Info.plist */,
+			);
+			path = AlwaysSmiling_TestUITests;
+			sourceTree = "<group>";
+		};
+		1F7A786721CA9F6400CDB3F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F7A786821CA9F6400CDB3F7 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F7A786A21CA9F6400CDB3F7 /* AlwaysSmiling1 */ = {
+			isa = PBXGroup;
+			children = (
+				1F7A786B21CA9F6400CDB3F7 /* SafariExtensionHandler.h */,
+				1F7A786C21CA9F6400CDB3F7 /* SafariExtensionHandler.m */,
+				1F7A786E21CA9F6400CDB3F7 /* SafariExtensionViewController.h */,
+				1F7A786F21CA9F6400CDB3F7 /* SafariExtensionViewController.m */,
+				1F7A787121CA9F6400CDB3F7 /* SafariExtensionViewController.xib */,
+				1F7A787421CA9F6400CDB3F7 /* Info.plist */,
+				1F7A787521CA9F6400CDB3F7 /* script.js */,
+				1F7A787721CA9F6400CDB3F7 /* ToolbarItemIcon.pdf */,
+				1F7A787921CA9F6400CDB3F7 /* AlwaysSmiling1.entitlements */,
+			);
+			path = AlwaysSmiling1;
+			sourceTree = "<group>";
+		};
+		451F824721D0913C00397C72 /* AlwaysSmiling */ = {
+			isa = PBXGroup;
+			children = (
+				451F824821D0913C00397C72 /* SafariExtensionHandler.swift */,
+				451F824A21D0913C00397C72 /* SafariExtensionViewController.swift */,
+				451F824C21D0913C00397C72 /* SafariExtensionViewController.xib */,
+				451F824F21D0913C00397C72 /* Info.plist */,
+				451F825021D0913C00397C72 /* script.js */,
+				451F825221D0913C00397C72 /* ToolbarItemIcon.pdf */,
+				451F825421D0913C00397C72 /* AlwaysSmiling.entitlements */,
+			);
+			path = AlwaysSmiling;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F7A782E21CA9F2F00CDB3F7 /* Extension Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7A785921CA9F3000CDB3F7 /* Build configuration list for PBXNativeTarget "Extension Test" */;
+			buildPhases = (
+				1F7A782B21CA9F2F00CDB3F7 /* Sources */,
+				1F7A782C21CA9F2F00CDB3F7 /* Frameworks */,
+				1F7A782D21CA9F2F00CDB3F7 /* Resources */,
+				1F7A788021CA9F6400CDB3F7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F7A787B21CA9F6400CDB3F7 /* PBXTargetDependency */,
+			);
+			name = "Extension Test";
+			productName = "Extension Test";
+			productReference = 1F7A782F21CA9F2F00CDB3F7 /* Extension Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F7A784421CA9F3000CDB3F7 /* Extension TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7A785C21CA9F3000CDB3F7 /* Build configuration list for PBXNativeTarget "Extension TestTests" */;
+			buildPhases = (
+				1F7A784121CA9F3000CDB3F7 /* Sources */,
+				1F7A784221CA9F3000CDB3F7 /* Frameworks */,
+				1F7A784321CA9F3000CDB3F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F7A784721CA9F3000CDB3F7 /* PBXTargetDependency */,
+			);
+			name = "Extension TestTests";
+			productName = "Extension TestTests";
+			productReference = 1F7A784521CA9F3000CDB3F7 /* Extension TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F7A784F21CA9F3000CDB3F7 /* Extension TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7A785F21CA9F3000CDB3F7 /* Build configuration list for PBXNativeTarget "Extension TestUITests" */;
+			buildPhases = (
+				1F7A784C21CA9F3000CDB3F7 /* Sources */,
+				1F7A784D21CA9F3000CDB3F7 /* Frameworks */,
+				1F7A784E21CA9F3000CDB3F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F7A785221CA9F3000CDB3F7 /* PBXTargetDependency */,
+			);
+			name = "Extension TestUITests";
+			productName = "Extension TestUITests";
+			productReference = 1F7A785021CA9F3000CDB3F7 /* Extension TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1F7A786521CA9F6400CDB3F7 /* extension_test1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7A787D21CA9F6400CDB3F7 /* Build configuration list for PBXNativeTarget "extension_test1" */;
+			buildPhases = (
+				1F7A786221CA9F6400CDB3F7 /* Sources */,
+				1F7A786321CA9F6400CDB3F7 /* Frameworks */,
+				1F7A786421CA9F6400CDB3F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = extension_test1;
+			productName = extension_test1;
+			productReference = 1F7A786621CA9F6400CDB3F7 /* extension_test1.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		451F824421D0913B00397C72 /* AlwaysSmiling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 451F825721D0913C00397C72 /* Build configuration list for PBXNativeTarget "AlwaysSmiling" */;
+			buildPhases = (
+				451F824121D0913B00397C72 /* Sources */,
+				451F824221D0913B00397C72 /* Frameworks */,
+				451F824321D0913B00397C72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlwaysSmiling;
+			productName = AlwaysSmiling;
+			productReference = 451F824521D0913B00397C72 /* AlwaysSmiling.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F7A782721CA9F2F00CDB3F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Dreambuilders Resoures";
+				TargetAttributes = {
+					1F7A782E21CA9F2F00CDB3F7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1F7A784421CA9F3000CDB3F7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1F7A782E21CA9F2F00CDB3F7;
+					};
+					1F7A784F21CA9F3000CDB3F7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1F7A782E21CA9F2F00CDB3F7;
+					};
+					1F7A786521CA9F6400CDB3F7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					451F824421D0913B00397C72 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 1F7A782A21CA9F2F00CDB3F7 /* Build configuration list for PBXProject "AlwaysSmiling" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F7A782621CA9F2F00CDB3F7;
+			productRefGroup = 1F7A783021CA9F2F00CDB3F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F7A782E21CA9F2F00CDB3F7 /* Extension Test */,
+				1F7A784421CA9F3000CDB3F7 /* Extension TestTests */,
+				1F7A784F21CA9F3000CDB3F7 /* Extension TestUITests */,
+				1F7A786521CA9F6400CDB3F7 /* extension_test1 */,
+				451F824421D0913B00397C72 /* AlwaysSmiling */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F7A782D21CA9F2F00CDB3F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7A783921CA9F3000CDB3F7 /* Assets.xcassets in Resources */,
+				1F7A783C21CA9F3000CDB3F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7A784321CA9F3000CDB3F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7A784E21CA9F3000CDB3F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7A786421CA9F6400CDB3F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7A787821CA9F6400CDB3F7 /* ToolbarItemIcon.pdf in Resources */,
+				1F7A787321CA9F6400CDB3F7 /* SafariExtensionViewController.xib in Resources */,
+				1F7A787621CA9F6400CDB3F7 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451F824321D0913B00397C72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451F825321D0913C00397C72 /* ToolbarItemIcon.pdf in Resources */,
+				451F824E21D0913C00397C72 /* SafariExtensionViewController.xib in Resources */,
+				451F825121D0913C00397C72 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F7A782B21CA9F2F00CDB3F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7A783721CA9F2F00CDB3F7 /* ViewController.m in Sources */,
+				1F7A783F21CA9F3000CDB3F7 /* main.m in Sources */,
+				1F7A783421CA9F2F00CDB3F7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7A784121CA9F3000CDB3F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7A784A21CA9F3000CDB3F7 /* AlwaysSmiling_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7A784C21CA9F3000CDB3F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7A785521CA9F3000CDB3F7 /* AlwaysSmiling_UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7A786221CA9F6400CDB3F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7A787021CA9F6400CDB3F7 /* SafariExtensionViewController.m in Sources */,
+				1F7A786D21CA9F6400CDB3F7 /* SafariExtensionHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451F824121D0913B00397C72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451F824B21D0913C00397C72 /* SafariExtensionViewController.swift in Sources */,
+				451F824921D0913C00397C72 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F7A784721CA9F3000CDB3F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F7A782E21CA9F2F00CDB3F7 /* Extension Test */;
+			targetProxy = 1F7A784621CA9F3000CDB3F7 /* PBXContainerItemProxy */;
+		};
+		1F7A785221CA9F3000CDB3F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F7A782E21CA9F2F00CDB3F7 /* Extension Test */;
+			targetProxy = 1F7A785121CA9F3000CDB3F7 /* PBXContainerItemProxy */;
+		};
+		1F7A787B21CA9F6400CDB3F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F7A786521CA9F6400CDB3F7 /* extension_test1 */;
+			targetProxy = 1F7A787A21CA9F6400CDB3F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F7A783A21CA9F3000CDB3F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F7A783B21CA9F3000CDB3F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F7A787121CA9F6400CDB3F7 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F7A787221CA9F6400CDB3F7 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+		451F824C21D0913C00397C72 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				451F824D21D0913C00397C72 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F7A785721CA9F3000CDB3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F7A785821CA9F3000CDB3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F7A785A21CA9F3000CDB3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlwaysSmiling/AlwaysSmiling.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = AlwaysSmiling/AlwaysSmiling.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V46K3P9J67;
+				INFOPLIST_FILE = "$(SRCROOT)/AlwaysSmiling1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = dreambuildersresoures.AlwaysSmiling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		1F7A785B21CA9F3000CDB3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlwaysSmiling/AlwaysSmiling.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V46K3P9J67;
+				INFOPLIST_FILE = "$(SRCROOT)/AlwaysSmiling1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = dreambuildersresoures.AlwaysSmiling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		1F7A785D21CA9F3000CDB3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Extension TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "lexy.Extension-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Extension Test.app/Contents/MacOS/Extension Test";
+			};
+			name = Debug;
+		};
+		1F7A785E21CA9F3000CDB3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Extension TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "lexy.Extension-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Extension Test.app/Contents/MacOS/Extension Test";
+			};
+			name = Release;
+		};
+		1F7A786021CA9F3000CDB3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Extension TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "lexy.Extension-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Extension Test";
+			};
+			name = Debug;
+		};
+		1F7A786121CA9F3000CDB3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Extension TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "lexy.Extension-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Extension Test";
+			};
+			name = Release;
+		};
+		1F7A787E21CA9F6400CDB3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlwaysSmiling1/AlwaysSmiling1.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V46K3P9J67;
+				INFOPLIST_FILE = "$(SRCROOT)/AlwaysSmiling/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = DreambuildersResources.AlwaysSmiling.AlwaysSmiling1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1F7A787F21CA9F6400CDB3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlwaysSmiling1/AlwaysSmiling1.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V46K3P9J67;
+				INFOPLIST_FILE = "$(SRCROOT)/AlwaysSmiling/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = DreambuildersResources.AlwaysSmiling.AlwaysSmiling1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		451F825521D0913C00397C72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlwaysSmiling/AlwaysSmiling.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V46K3P9J67;
+				INFOPLIST_FILE = AlwaysSmiling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dreambuildersresoures.AlwaysSmiling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		451F825621D0913C00397C72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlwaysSmiling/AlwaysSmiling.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V46K3P9J67;
+				INFOPLIST_FILE = AlwaysSmiling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = dreambuildersresoures.AlwaysSmiling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F7A782A21CA9F2F00CDB3F7 /* Build configuration list for PBXProject "AlwaysSmiling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7A785721CA9F3000CDB3F7 /* Debug */,
+				1F7A785821CA9F3000CDB3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7A785921CA9F3000CDB3F7 /* Build configuration list for PBXNativeTarget "Extension Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7A785A21CA9F3000CDB3F7 /* Debug */,
+				1F7A785B21CA9F3000CDB3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7A785C21CA9F3000CDB3F7 /* Build configuration list for PBXNativeTarget "Extension TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7A785D21CA9F3000CDB3F7 /* Debug */,
+				1F7A785E21CA9F3000CDB3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7A785F21CA9F3000CDB3F7 /* Build configuration list for PBXNativeTarget "Extension TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7A786021CA9F3000CDB3F7 /* Debug */,
+				1F7A786121CA9F3000CDB3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7A787D21CA9F6400CDB3F7 /* Build configuration list for PBXNativeTarget "extension_test1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7A787E21CA9F6400CDB3F7 /* Debug */,
+				1F7A787F21CA9F6400CDB3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		451F825721D0913C00397C72 /* Build configuration list for PBXNativeTarget "AlwaysSmiling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451F825521D0913C00397C72 /* Debug */,
+				451F825621D0913C00397C72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F7A782721CA9F2F00CDB3F7 /* Project object */;
+}

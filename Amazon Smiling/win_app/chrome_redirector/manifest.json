@@ -1,0 +1,39 @@
+{
+  "name": "Redirector",
+  "description": "Redirect urls using regular expressions",
+  "icons": {
+    "16":  "icon/16.png",
+    "32":  "icon/32.png",
+    "48":  "icon/48.png",
+    "128": "icon/128.png"
+  },
+  "version": "1.0",
+  "manifest_version": 2,
+  
+  "content_scripts": [ {
+    "all_frames": true,
+    "js": [ "libs/jquery.js"],
+    "matches": [ "\u003Call_urls>" ]
+  }],
+  "background": {
+    "scripts": ["background.js", "libs/jquery.js"],
+    "pages": ["background.html"]
+  },
+  "browser_action": {
+    "default_popup": ""
+  },
+  "permissions": [
+    "downloads", 
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "contextMenus", 
+    "tabs", 
+    "\u003Call_urls>",
+    "storage",
+    "*://*/*",
+    "notifications",
+    "webNavigation"
+  ],
+  "content_security_policy": "script-src 'self' https://*.googleapis.com https://*.bootstrapcdn.com; object-src 'self'"
+}

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="Extension Test" id="1Xt-HY-uBw" userLabel="Always Smiling">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Extension Test" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About Extension Test" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide Extension Test" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit Extension Test" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="File" id="dMs-cI-mzQ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="File" id="bib-Uj-vzu">
+                                    <items>
+                                        <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
+                                            <connections>
+                                                <action selector="performClose:" target="Ady-hI-5gd" id="HmO-Ls-i7Q"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Help" id="wpr-3q-Mcd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
+                                    <items>
+                                        <menuItem title="Extension Test Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                            <connections>
+                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="About" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titleVisibility="hidden" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="720" height="450"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q23-wx-Zvk">
+                                <rect key="frame" x="232" y="-10" width="480" height="466"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" selectable="YES" enabled="NO" title="Multiline Label" drawsBackground="YES" id="ANd-6W-pws">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="97r-NC-OAO">
+                                <rect key="frame" x="0.0" y="0.0" width="258" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="258" id="kL7-SC-fBJ"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Logo" id="mOK-ov-Vug"/>
+                            </imageView>
+                            <tabView focusRingType="none" appearanceType="aqua" fixedFrame="YES" drawsBackground="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVc-kQ-bhm">
+                                <rect key="frame" x="253" y="-10" width="454" height="466"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <font key="font" metaFont="system"/>
+                                <tabViewItems>
+                                    <tabViewItem label="Home" identifier="" id="veR-vm-Okz">
+                                        <view key="view" ambiguous="YES" id="6Ur-gV-zUl">
+                                            <rect key="frame" x="10" y="33" width="434" height="420"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lIt-gq-QfY">
+                                                    <rect key="frame" x="15" y="13" width="415" height="398"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES"/>
+                                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" allowsEditingTextAttributes="YES" id="Jti-EC-Y5c">
+                                                        <font key="font" size="12" name="Avenir-Medium"/>
+                                                        <string key="title">Always Smiling for MLD Foundation is free and automatic.
+  • Install it once
+  • Confirm MLD Foundation as your benefiting charity
+  • AmazonSmile Foundation automatically donates a small portion of every purchase to MLD Foundation!
+
+It’s that simple … you are now fundraising at no cost to you!
+
+One more thing … Make sure you ask all of your friends to download the Always Smiling for MLD Foundation extension, too!
+
+Extensions exist for Safari, Chrome, and Firefox desktop and mobile browsers … so there is full support for all of your devices.</string>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYe-EZ-nIl">
+                                                    <rect key="frame" x="53" y="46" width="312" height="71"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="9f1-sx-Dz4"/>
+                                                        <constraint firstAttribute="width" constant="315" id="ixy-9a-wmJ"/>
+                                                    </constraints>
+                                                    <buttonCell key="cell" type="push" title="Click to install Always Smiling extension" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="74B-Yy-VIH" colorLabel="IBBuiltInLabel-Red">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                        <connections>
+                                                            <action selector="onOpenPreference:" target="XfG-lQ-9wD" id="h3p-Qh-CKM"/>
+                                                        </connections>
+                                                    </buttonCell>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="MLD Foundation" identifier="" id="k5b-9n-qUH">
+                                        <view key="view" id="Wsb-3v-xGG">
+                                            <rect key="frame" x="10" y="33" width="434" height="420"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4UG-YX-prR">
+                                                    <rect key="frame" x="15" y="21" width="415" height="392"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" allowsEditingTextAttributes="YES" id="6Ct-gA-FsL">
+                                                        <font key="font" size="12" name="Avenir-Medium"/>
+                                                        <string key="title">Who is MLD Foundation?
+MLD Foundation supports research, clinical trials, newborn screening, and improving clinical for those with metachromatic leukodystrophy. 
+
+Our mission is We C.A.R.E.™ ... Compassion for families, increasing Awareness, influencing &amp; funding Research, and promoting Education for metachromatic leukodystrophy, a very rare terminal genetic neuro-metabolic disease where over half the cases affect infants.
+
+Learn more at https://MLDfoundation.org
+</string>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="Amazon Smile" identifier="" id="nE6-uo-7pZ">
+                                        <view key="view" id="C5C-l2-pJ6">
+                                            <rect key="frame" x="10" y="33" width="434" height="420"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Pa-p9-z6g">
+                                                    <rect key="frame" x="15" y="21" width="415" height="392"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" allowsEditingTextAttributes="YES" id="czn-d1-loe">
+                                                        <font key="font" size="12" name="Avenir-Medium"/>
+                                                        <string key="title">&lt;b&gt;What is AmazonSmile?&lt;/b&gt;
+AmazonSmile is a simple and automatic way for you to support your favorite charitable organization every time you shop, at no cost to you. When you shop at smile.amazon.com, you’ll find the exact same low prices, vast selection and convenient shopping experience as Amazon.com, with the added bonus that The AmazonSmile Foundation will donate 0.5% of the purchase price from your eligible AmazonSmile purchases to MLD Foundation at no cost to you.
+
+How do I shop at AmazonSmile and make sure MLD Foundation benefits?
+Install this Always Smiling extension one time and it will make sure that you always start at smile.amazon.com every time you shop when using your macOS Safari Browser.
+
+Can I receive a tax deduction for amounts donated from my purchases on AmazonSmile?
+Donations are made by the AmazonSmile Foundation and are not tax deductible by you.</string>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="About" identifier="" id="xAc-gM-2AF">
+                                        <view key="view" id="YiZ-3P-kLk">
+                                            <rect key="frame" x="10" y="33" width="434" height="420"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JnA-51-et3">
+                                                    <rect key="frame" x="7" y="19" width="415" height="392"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" allowsEditingTextAttributes="YES" id="qrt-Ns-XXR">
+                                                        <font key="font" size="12" name="Avenir-Medium"/>
+                                                        <string key="title">Always Smiling for MLD Foundation was developed by Dreambuilders Resources. 
+
+If you are interested in a version of Always Smiling for your US registered 501c3 charity so you can beneft from AmazonSmile Foundation donations as well, please contact us at https://Dreambuilders.us  dean@Dreambuilders.us  or  +1 503-664-4700
+
+© 2018 Dreambuilders Resources, LLC</string>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
+                                </tabViewItems>
+                            </tabView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="97r-NC-OAO" secondAttribute="bottom" id="Mcz-O0-XWe"/>
+                            <constraint firstItem="97r-NC-OAO" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="oJm-5b-XEv"/>
+                            <constraint firstItem="97r-NC-OAO" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="wvk-6O-KNF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="740"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="109.91999816894531" height="216"/>
+    </resources>
+</document>
